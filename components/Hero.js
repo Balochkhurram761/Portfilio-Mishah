@@ -52,24 +52,23 @@ function Hero() {
             
             <div>
               <h3 className="text-3xl font-bold text-[#FF7A00]">
-                <CountUp start={0} end={50} duration={2} />
-               50+
+                <CountUp start={0} end={50} duration={10} />+
               </h3>
               <p className="text-gray-400 text-sm">Projects Completed</p>
             </div>
 
             <div>
-              <h3 className="text-3xl font-bold text-[#FF7A00]">3+</h3>
+              <h3 className="text-3xl font-bold text-[#FF7A00]"> <CountUp start={0} end={3} duration={10} />+</h3>
               <p className="text-gray-400 text-sm">Years Experience</p>
             </div>
 
             <div>
-              <h3 className="text-3xl font-bold text-[#FF7A00]">30+</h3>
+              <h3 className="text-3xl font-bold text-[#FF7A00]"> <CountUp start={0} end={30} duration={10} />+</h3>
               <p className="text-gray-400 text-sm">Happy Clients</p>
             </div>
 
             <div>
-              <h3 className="text-3xl font-bold text-[#FF7A00]">100M+</h3>
+              <h3 className="text-3xl font-bold text-[#FF7A00]"> <CountUp start={0} end={100} duration={10} />M+</h3>
               <p className="text-gray-400 text-sm">Views Generated</p>
             </div>
 
