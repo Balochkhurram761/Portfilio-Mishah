@@ -2,7 +2,7 @@ import { services } from "../data/Services";
 
 function Services() {
   return (
-    <section className="bg-[#0B0B0F] text-white py-3">
+    <section className="bg-[#0B0B0F]  border-b border-gray-800  text-white py-3">
       <div className=" px-6">
 
         {/* Heading */}
@@ -21,13 +21,7 @@ function Services() {
                 key={service.id}
                 className="bg-[#121216]  cursor-pointer flex  flex-row gap-2 items-center  border border-gray-800 rounded-2xl p-8 hover:border-[#FF7A00] transition duration-300 group"
               >
-                {/* Icon */}
-                <div className="w-16 h-16 rounded-full bg-[#1A1A1F] flex items-center justify-center mb-6">
-                  <Icon
-                    size={40}
-                    className="text-[#FF7A00]"
-                  />
-                </div>
+               
                   <div className="body">
                 {/* Title */}
                 <h3 className="text-xl sm:text-2xl font-semibold mb-4">
@@ -38,6 +32,13 @@ function Services() {
                 <p className="text-gray-400 leading-relaxed">
                   {service.description}
                 </p>
+                </div>
+                 {/* Icon */}
+                <div className="w-16 h-16 rounded-full bg-[#1A1A1F] flex items-center justify-center mb-6">
+                  <Icon
+                    size={40}
+                    className="text-[#FF7A00]"
+                  />
                 </div>
               </div>
             );

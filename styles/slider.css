@@ -1,0 +1,13 @@
+.swiper {
+  width: 100%;
+  padding-bottom: 40px;
+}
+
+.swiper-slide {
+  height: auto !important;
+  display: flex;
+}
+
+.swiper-pagination-bullet {
+  background: #ff7a00;
+}
