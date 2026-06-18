@@ -2,7 +2,7 @@ import { services } from "../data/Services";
 
 function Services() {
   return (
-    <section className="bg-[#0B0B0F]  border-b border-gray-800  text-white py-3">
+    <section id="services" className="bg-[#0B0B0F]  border-b border-gray-800  text-white py-3">
       <div className=" px-6">
         {/* Heading */}
         <h2 className="text-4xl font-bold mb-6">

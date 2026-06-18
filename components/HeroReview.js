@@ -43,15 +43,15 @@ function Testimonials() {
             <div>
               <h3 className="text-3xl flex font-bold text-[#FF7A00]">
                 {" "}
-                <IoStarSharp /> <CountUp start={0} end={4.9} duration={5} />
+                <IoStarSharp /> 4.9
               </h3>
               <p className="text-gray-400">Overall Rating</p>
-            </div>
+            </div>x
 
             <div>
               <h3 className="text-3xl text-white font-bold">
                 {" "}
-                <CountUp start={0} end={100} duration={5} />+
+                <CountUp start={0} end={100} duration={14} />+
               </h3>
               <p className="text-gray-400">Total Reviews</p>
             </div>

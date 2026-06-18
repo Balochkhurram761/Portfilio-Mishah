@@ -1,4 +1,7 @@
 import { FaYoutube, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
+import { CiMail } from "react-icons/ci";
+
+import Link from "next/link";
 
 function Footer() {
   return (
@@ -14,30 +17,38 @@ function Footer() {
 
           {/* Social Icons */}
           <div className="flex items-center gap-4">
-            <a
-              href="#"
-              className="flex h-10 w-10 items-center justify-center rounded-full bg-zinc-900 hover:bg-orange-500 transition"
+            <Link
+              href="mailto:misbahbaloch101@gmail.com "
+              target="_blank"
+              className="flex h-10 w-10 text-white items-center justify-center rounded-full bg-zinc-900 hover:bg-orange-500 transition"
+            >
+              <CiMail size={18} />
+            </Link>
+            <Link
+              href="mailto:misbahbaloch101@gmail.com "
+              target="_blank"
+              className="flex h-10 text-white w-10 white items-center justify-center rounded-full bg-zinc-900 hover:bg-orange-500 transition"
             >
               <FaYoutube size={18} />
-            </a>
+            </Link>
 
-            <a
+            <Link
               href="#"
-              className="flex h-10 w-10 items-center justify-center rounded-full bg-zinc-900 hover:bg-orange-500 transition"
+              className="flex text-white h-10 w-10 items-center justify-center rounded-full bg-zinc-900 hover:bg-orange-500 transition"
             >
               <FaInstagram size={18} />
-            </a>
+            </Link>
 
             <a
               href="#"
-              className="flex h-10 w-10 items-center justify-center rounded-full bg-zinc-900 hover:bg-orange-500 transition"
+              className="flex h-10 text-white w-10 items-center justify-center rounded-full bg-zinc-900 hover:bg-orange-500 transition"
             >
               <FaTwitter size={18} />
             </a>
 
             <a
               href="#"
-              className="flex h-10 w-10 items-center justify-center rounded-full bg-zinc-900 hover:bg-orange-500 transition"
+              className="flex h-10 text-white w-10 items-center justify-center rounded-full bg-zinc-900 hover:bg-orange-500 transition"
             >
               <FaLinkedin size={18} />
             </a>

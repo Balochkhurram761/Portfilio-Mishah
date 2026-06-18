@@ -30,7 +30,7 @@ function Navbar() {
             About
           </Link>
 
-          <Link href="/services" className="hover:text-[#FF7A00] transition">
+          <Link href="#services" className="hover:text-[#FF7A00] transition">
             Services
           </Link>
 
