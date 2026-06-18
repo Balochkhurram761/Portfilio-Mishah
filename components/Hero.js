@@ -40,7 +40,7 @@ function Hero() {
 
             <Link
               href="/Misbah_Tahir_Professional_CV.pdf"
-              download
+              download target="_blank"
               className="border flex items-center gap-1 border-gray-700 hover:border-[#FF7A00] transition px-8 py-4 rounded-2xl font-medium"
             >
               <FaLongArrowAltDown />
@@ -103,7 +103,7 @@ function Hero() {
               <span className="w-3 h-3 rounded-full bg-green-500"></span>
               <div>
                 <p className="text-xs text-gray-400">Available for</p>
-                <p className="font-semibold">Freelance Projects</p>
+                <p className="font-semibold">Fiverr Projects</p>
               </div>
             </div>
           </div>

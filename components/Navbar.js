@@ -30,7 +30,7 @@ function Navbar() {
             About
           </Link>
 
-          <Link href="#services" className="hover:text-[#FF7A00] transition">
+          <Link href="/#services" className="hover:text-[#FF7A00] transition">
             Services
           </Link>
 
@@ -39,15 +39,20 @@ function Navbar() {
           </Link>
 
           <Link
-            href="/testimonials"
+            href="/#testimonials"
             className="hover:text-[#FF7A00] transition"
           >
             Testimonials
           </Link>
 
-          <Link href="/contact" className="hover:text-[#FF7A00] transition">
-            Contact
-          </Link>
+          <a
+            href="https://wa.me/923427139312"
+            target="_blank"
+            className="hover:text-[#FF7A00] transition"
+            
+          >
+           Contact
+          </a>
         </div>
 
         {/* CTA Button */}

@@ -3,7 +3,7 @@ import { services } from "../data/Services";
 function Services() {
   return (
     <section id="services" className="bg-[#0B0B0F]  border-b border-gray-800  text-white py-3">
-      <div className=" px-6">
+      <div className=" px-6 ">
         {/* Heading */}
         <h2 className="text-4xl font-bold mb-6">
           My <span className="text-[#FF7A00] ">Services</span>
@@ -18,7 +18,7 @@ function Services() {
             return (
               <div
                 key={service.id}
-                className="bg-[#121216]  cursor-pointer flex  flex-row gap-2 items-center  border border-gray-800 rounded-2xl p-8 hover:border-[#FF7A00] transition duration-300 group"
+                className="bg-[#121216]  cursor-pointer flex flex-col sm:flex-row gap-2 items-center  border border-gray-800 rounded-2xl p-8 hover:border-[#FF7A00] transition duration-300 group"
               >
                 {/* Icon */}
                 <div className="w-16 h-16 rounded-full bg-[#1A1A1F] flex items-center justify-center mb-6">
