@@ -1,4 +1,3 @@
-
 const reviews = [
   {
     id: 1,
@@ -7,6 +6,7 @@ const reviews = [
     avatar: "/reviews/user1.jpg",
     review:
       "Amazing work! The video editing was perfect and delivered before the deadline.",
+    published: "2 days ago",
   },
   {
     id: 2,
@@ -15,6 +15,7 @@ const reviews = [
     avatar: "/reviews/user2.jpg",
     review:
       "Excellent communication and outstanding editing skills. Highly recommended.",
+    published: "3 days ago",
   },
   {
     id: 3,
@@ -23,6 +24,7 @@ const reviews = [
     avatar: "/reviews/user3.jpg",
     review:
       "Very professional and fast. The final result exceeded expectations.",
+    published: "5 days ago",
   },
   {
     id: 4,
@@ -31,26 +33,42 @@ const reviews = [
     avatar: "/reviews/user4.jpg",
     review:
       "Great storytelling and smooth transitions. Perfect editor for documentaries.",
+    published: "6 days ago",
   },
   {
     id: 5,
     name: "creative_vision",
     country: "Germany",
     avatar: "/reviews/user5.jpg",
-    review:
-      "Amazing experience! The video looks cinematic and engaging.",
+    review: "Amazing experience! The video looks cinematic and engaging.",
+    published: "1 week ago",
   },
   {
     id: 6,
     name: "lucy_socials",
     country: "France",
     avatar: "/reviews/user6.jpg",
+    review: "Superb reel editing! Great effects, captions and timing.",
+    published: "1 week ago",
+  },
+  {
+    id: 7,
+    name: "raul_producer",
+    country: "spain",
+    avatar: "/reviews/user6.jpg",
     review:
-      "Superb reel editing! Great effects, captions and timing.",
+      "Excellent sound design, transitions and pacing Very professional service! ",
+    published: "1 month ago",
+  },
+  {
+    id: 8,
+    name: "maria_daily",
+    country: "Austaiia",
+    avatar: "/reviews/user6.jpg",
+    review:
+      "Beautifull edits and great style. Delivered before the deadline. highly recommended! ",
+    published: "1 month ago",
   },
 ];
-
-
-
 
 export default reviews;
