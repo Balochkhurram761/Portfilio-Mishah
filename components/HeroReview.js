@@ -11,7 +11,7 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 
-import { FreeMode, Pagination } from "swiper/modules";
+import { FreeMode, Pagination, Autoplay } from "swiper/modules";
 const CountUp = dynamic(() => import("react-countup"), {
   ssr: false,
 });
@@ -63,6 +63,10 @@ function Testimonials() {
           spaceBetween={30}
           freeMode={true}
           pagination={{ clickable: true }}
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,
+          }}
           modules={[FreeMode, Pagination]}
           className="mySwiper"
           breakpoints={{
@@ -74,39 +78,36 @@ function Testimonials() {
           {reviews.map((item, index) => (
             <SwiperSlide key={index}>
               <div className="bg-[#1A1A1F] p-4 rounded-xl text-left h-full">
-              <div className="wrap flex justify-between items-center">
-                <div className="flex mb-3 items-center gap-3">
-                     <Avatar
-                  sx={{
-                    bgcolor: "#7c3aed",
-                    width: 50,
-                    height: 50,
-                    fontWeight: 700,
-                  }}
-                >
-                  {" "}
-                  {getInitials(item.name)}{" "}
-                </Avatar>
-                {/* User */}
-                  <div className="" >
-                    <h4 className="text-white font-semibold">{item.name}</h4>
-                    <p className="text-gray-400 text-sm">{item.country}</p>
+                <div className="wrap flex flex-col sm:flex-row justify-between sm:items-center">
+                  <div className="flex mb-3 items-center gap-3">
+                    <Avatar
+                      sx={{
+                        bgcolor: "#7c3aed",
+                        width: 50,
+                        height: 50,
+                        fontWeight: 700,
+                      }}
+                    >
+                      {" "}
+                      {getInitials(item.name)}{" "}
+                    </Avatar>
+                    {/* User */}
+                    <div className="">
+                      <h4 className="text-white font-semibold">{item.name}</h4>
+                      <p className="text-gray-400 text-sm">{item.country}</p>
+                    </div>
+                  </div>
+                  <div className="flex text-[#FF7A00] mb-3">
+                    {[...Array(5)].map((_, i) => (
+                      <FaStar key={i} />
+                    ))}
                   </div>
                 </div>
-                 <div className="flex text-[#FF7A00] mb-3">
-                  {[...Array(5)].map((_, i) => (
-                    <FaStar key={i} />
-                  ))}
-                </div>
-                </div>
                 {/* Review */}
-                <div className="flex flex-col gap-2 " >
-                <p className="text-gray-300 ">{item.review}</p>
-                <p className="text-gray-300 ">
-                  Published: {item.published}
-                </p>
+                <div className="flex flex-col gap-2 ">
+                  <p className="text-gray-300 ">{item.review}</p>
+                  <p className="text-gray-300 ">Published: {item.published}</p>
                 </div>
-               
               </div>
             </SwiperSlide>
           ))}
