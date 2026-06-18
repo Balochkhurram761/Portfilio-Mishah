@@ -7,7 +7,7 @@ function Navbar() {
       <div className="  flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
-          <span className="text-2xl text-white">
+          <span className="text-2xl text-[#FF7A00]">
             <BiSolidMovie />
           </span>
 

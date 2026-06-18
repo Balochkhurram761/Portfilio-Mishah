@@ -73,9 +73,10 @@ function Testimonials() {
         >
           {reviews.map((item, index) => (
             <SwiperSlide key={index}>
-              <div className="bg-[#1A1A1F] p-6 rounded-xl text-left h-full">
-                {/* Stars */}
-                <Avatar
+              <div className="bg-[#1A1A1F] p-4 rounded-xl text-left h-full">
+              <div className="wrap flex justify-between items-center">
+                <div className="flex mb-3 items-center gap-3">
+                     <Avatar
                   sx={{
                     bgcolor: "#7c3aed",
                     width: 50,
@@ -87,22 +88,25 @@ function Testimonials() {
                   {getInitials(item.name)}{" "}
                 </Avatar>
                 {/* User */}
-                <div className="flex items-center gap-3">
-                  <div>
+                  <div className="" >
                     <h4 className="text-white font-semibold">{item.name}</h4>
                     <p className="text-gray-400 text-sm">{item.country}</p>
                   </div>
                 </div>
-                {/* Review */}
-                <p className="text-gray-300 mb-4">{item.review}</p>
-                <p className="text-gray-300 mb-4">
-                  Published: {item.published}
-                </p>
-                <div className="flex text-[#FF7A00] mb-3">
+                 <div className="flex text-[#FF7A00] mb-3">
                   {[...Array(5)].map((_, i) => (
                     <FaStar key={i} />
                   ))}
                 </div>
+                </div>
+                {/* Review */}
+                <div className="flex flex-col gap-2 " >
+                <p className="text-gray-300 ">{item.review}</p>
+                <p className="text-gray-300 ">
+                  Published: {item.published}
+                </p>
+                </div>
+               
               </div>
             </SwiperSlide>
           ))}
