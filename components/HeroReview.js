@@ -51,7 +51,7 @@ function Testimonials() {
             <div>
               <h3 className="text-3xl text-white font-bold">
                 {" "}
-                <CountUp start={0} end={100} duration={14} />+
+                <CountUp start={0} end={100} duration={24} />+
               </h3>
               <p className="text-gray-400">Total Reviews</p>
             </div>
@@ -78,7 +78,7 @@ function Testimonials() {
           {reviews.map((item, index) => (
             <SwiperSlide key={index}>
               <div className="bg-[#1A1A1F] p-4 rounded-xl text-left h-full">
-                <div className="wrap flex flex-col sm:flex-row justify-between sm:items-center">
+                <div className="wrap flex flex-col sm:flex-row justify-between ">
                   <div className="flex mb-3 items-center gap-3">
                     <Avatar
                       sx={{
