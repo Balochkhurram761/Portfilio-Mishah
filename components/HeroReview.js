@@ -27,7 +27,7 @@ function Testimonials() {
   };
   return (
     <section id="testimonials" className="py-20 bg-[#0B0B0F] border-b border-gray-800">
-      <div className="container mx-auto px-6">
+      <div className=" px-6">
         {/* Heading */}
         <div className="flex flex-col lg:flex-row justify-between items-center mb-12">
           <div>
